@@ -1,0 +1,9 @@
+* c59b8b8 The final hard requirement is completed
+* d323d43 First hard requirement complete
+* 010930d All medium requirements should be achieved
+* 631b2d8 Worked up to final part of medium requirements
+* c16ba31 Complted up to 1st medium req
+* 4f89fe0 Fixed error in census notebook caused by typo in Cell In[16], line 3
+* fd8daaa Updated notebok
+* a37803d Adding data and code
+* 2cb537b Initial commit with project spec, notebook, and refine script
