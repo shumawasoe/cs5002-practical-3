@@ -10,5 +10,50 @@
     "UR_RESIDENCE_TYPE": {
         "1": "Resident in a household",
         "2": "Resident in a communal establishment"
+    },
+    "AGE_BAND_AGG8": {
+        "1": "0-15 years",
+        "2": "16-24 years",
+        "3": "25-34 years",
+        "4": "35-44 years",
+        "5": "45-54 years",
+        "6": "55-64 years",
+        "7": "65-74 years",
+        "8": "75+ years"
+    },
+    "ECONOMIC_ACTIVITY_10M": {
+        "1": "Economically active (excluding full-time students): Employee",
+        "2": "Economically active (excluding full-time students): Self-employed",
+        "3": "Economically active (excluding full-time students): Unemployed",
+        "4": "Economically active: Full-time student",
+        "5": "Economically Inactive: Retired",
+        "6": "Economically Inactive: Student",
+        "7": "Economically Inactive: Looking after family or home",
+        "8": "Economically Inactive: Long term sick or disabled",
+        "9": "Economically inactive: Other"
+    },
+    "HOURS_PER_WEEK_WORKED": {
+        "1": "0 to 15 hours",
+        "2": "16 to 30 hours",
+        "3": "31 to 48 hours",
+        "4": "49 or more hours"
+    },
+    "HEALTH_IN_GENERAL": {
+        "1": "Very Good Heath",
+        "2": "Good health",
+        "3": "Fair health",
+        "4": "Bad health",
+        "5": "Very bad health"
+    },
+    "OCCUPATION_CURRENT_1DIGIT": {
+        "1": "1. Managers, directors and senior officials",
+        "2": "2. Professional occupations",
+        "3": "3. Associate professional and technical occupations",
+        "4": "4. Administrative and secretarial occupations",
+        "5": "5. Skilled trades occupations",
+        "6": "6. Caring, leisure and other service occupations",
+        "7": "7. Sales and customer service occupations",
+        "8": "8. Process, plant and machine operatives",
+        "9": "9. Elementary occupations"
     }
 }

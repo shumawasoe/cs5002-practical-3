@@ -73,7 +73,7 @@ def refine_data(csv_filepath: str, json_filepath: str) -> pd.DataFrame:
     print("CE residents code '-8' replaced with NaN.")
 
     
-    #VALIDATE CODES AND MAP TO STRINGS
+    #VALIDATE CODES
     for col, mapping_dict in data_dictionary.items():
         if col in df.columns:
             #Exclude the code -8 "No code required (CE residents)"
@@ -84,16 +84,6 @@ def refine_data(csv_filepath: str, json_filepath: str) -> pd.DataFrame:
  
         if inadmissible_count > 0:
             print(f"'{col}' column contains {inadmissible_count} inadmissible values")
-            
-        #Create a new column with human-readable string labels
-        new_col_name = f"{col}_LABEL"
-        #Convert data_dictionary.json keys to integers to match with column data
-        int_mapping_dict = {int(k): v for k, v in mapping_dict.items()}
-        
-        #Apply the mapping
-        #Unmapped (NaN/inadmissible) values will remain NaN
-        df[new_col_name] = df[col].map(int_mapping_dict)
-        print(f"Created new column '{new_col_name}' using dictionary mapping")
         
 
     #IDENTIFY OUTLIERS AND ANOMALIES
@@ -125,7 +115,7 @@ def main():
     args = parser.parse_args()
 
     #Define output file path
-    output_filepath = "refined_census_data.csv"
+    output_filepath = "../data/refined_census_data.csv"
     
     #Execute refinement process
     refined_df = refine_data(args.csv_file, args.json_file)
@@ -136,7 +126,7 @@ def main():
         print(f"Refined data saved to {output_filepath}")
         print(f"Final data shape: {refined_df.shape}") #source: Lecture video "34 - Pandas"
     except Exception as e:
-        print(f"Error: Could not save the refined data. {e}")
+        print(f"Could not save the refined data. {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
